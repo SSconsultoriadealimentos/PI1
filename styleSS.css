@@ -69,7 +69,7 @@ header nav ul li a {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.08em;
-    color: #478A45;
+    color: #1DAE54;
     text-decoration: none;
     padding: 5px 0;
 }
@@ -120,7 +120,7 @@ section.hero-section p {
     font-size: clamp(18px, 3vw, 24px);
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #478A45;
+    color: #1DAE54;
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
@@ -222,6 +222,32 @@ section#servicos > div > div:last-of-type {
     gap: 25px;
 }
 
+section#servicos button{
+    
+	width: 100%;   
+    background: #0E2E4B;
+    border-radius: 10px;
+    border: none;
+	position: center;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+	padding: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+section#servicos button:hover {
+	background-color: #1DAE54;
+    opacity: 0.7;
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+
 article.service-item {
     box-sizing: border-box;
     width: 100%;
@@ -265,6 +291,7 @@ article.service-item p {
     color: #000000;
     margin: 0;
     flex-grow: 1;
+	padding-bottom: 12px;
 }
 
 /* --- Seção Contato --- */
@@ -340,7 +367,7 @@ section#contato form ::placeholder {
 section#contato form button[type="submit"] {
     display: inline-block;
     padding: 12px 30px;
-    background: #67D059;
+    background: #1DAE54;
     border-radius: 34.0525px;
     border: none;
     font-family: 'Kodchasan', sans-serif;
@@ -424,6 +451,7 @@ section#redes footer a {
 
 section#redes footer a:hover {
     opacity: 0.7;
+    transition: all 0.2s ease-in-out;
 }
 
 section#redes footer a .social-icon-img {
@@ -437,10 +465,6 @@ section#redes footer p {
     font-size: 13px;
     color: #bbbbbb;
 }
-
-
-
-
 
 
 
