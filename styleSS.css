@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Kodchasan:wght@700&family=Krona+One&family=Inter:wght@600;700&display=swap');
 
-/* --- Estilos Globais e Reset --- */
-body, html {
+/* --- RESET E ESTILOS GLOBAIS --- */
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body, html {
     background-color: #FFFFFF;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
@@ -20,7 +20,7 @@ body {
     position: relative;
 }
 
-/* --- Cabeçalho --- */
+/* --- CABEÇALHO --- */
 header {
     background: #F8F7F5;
     padding: 15px 0;
@@ -44,7 +44,6 @@ header h1 {
     height: 50px;
     text-indent: -9999px;
     overflow: hidden;
-    white-space: nowrap;
     font-size: 0;
     color: transparent;
     margin: 0;
@@ -53,7 +52,7 @@ header h1 {
 }
 
 header nav ul {
-	font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -63,8 +62,6 @@ header nav ul {
 }
 
 header nav ul li a {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 26px;
     line-height: 1.2;
@@ -78,7 +75,7 @@ header nav ul li a:hover {
     opacity: 0.8;
 }
 
-/* --- Seção Hero --- */
+/* --- HERO SECTION --- */
 section.hero-section {
     display: flex;
     flex-direction: column;
@@ -92,7 +89,6 @@ section.hero-section {
     background-size: cover;
     background-position: center;
     text-align: center;
-    margin-top: 0;
 }
 
 section.hero-section > div {
@@ -108,8 +104,6 @@ section.hero-section h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: clamp(40px, 5vw, 72px);
-    line-height: 1.2;
-    letter-spacing: -0.03em;
     color: #0E304C;
     margin: 0;
 }
@@ -118,14 +112,12 @@ section.hero-section p {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: clamp(18px, 3vw, 24px);
-    line-height: 1.2;
-    letter-spacing: -0.02em;
     color: #1DAE54;
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Seção Sobre Nós --- */
+/* --- SOBRE NÓS --- */
 section#sobre-nos {
     padding: 60px 20px;
 }
@@ -144,18 +136,14 @@ section#sobre-nos > div > div:first-child {
     min-width: 300px;
 }
 
-section#sobre-nos h2 {
+section#sobre-nos > div > div:first-child h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
-    line-height: 54px;
-    letter-spacing: 0.15em;
     color: #0E2E4B;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 
-/* Ajuste de especificidade para evitar sobreposição */
 section#sobre-nos > div > div:first-child p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -184,7 +172,7 @@ section#sobre-nos > div > div:last-child > div {
     font-size: 16px;
 }
 
-/* --- Seção Serviços --- */
+/* --- SERVIÇOS --- */
 section#servicos {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -199,12 +187,9 @@ section#servicos h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
-    line-height: 54px;
-    letter-spacing: 0.15em;
     color: #0E2E4B;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 section#servicos > div > p:first-of-type {
@@ -232,7 +217,6 @@ section#servicos button {
     font-weight: 700;
     font-size: 12px;
     padding: 12px;
-    line-height: 12px;
     color: #FFFFFF;
     cursor: pointer;
     transition: background-color 0.6s ease;
@@ -241,24 +225,23 @@ section#servicos button {
 section#servicos button:hover {
     background-color: #1DAE54;
     opacity: 0.7;
-    transition: all 0.2s ease-in-out;
 }
 
-article.service-item {
+section#servicos article.service-item {
     box-sizing: border-box;
     width: 100%;
     min-height: 297px;
     background: #FFFFFF;
-    border: 0.748783px solid #2DA145;
-    box-shadow: 0px 2.99513px 2.99513px rgba(112, 42, 120, 0.15);
-    border-radius: 11.2317px;
+    border: 1px solid #2DA145;
+    box-shadow: 0px 3px 3px rgba(112, 42, 120, 0.15);
+    border-radius: 11px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-article.service-item > div:first-child {
+section#servicos article.service-item > div:first-child {
     width: 100%;
     height: 160px;
     background: #D9D9D9;
@@ -270,16 +253,15 @@ article.service-item > div:first-child {
     color: #555;
 }
 
-article.service-item h4 {
+section#servicos article.service-item h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 17.9708px;
-    line-height: 21px;
+    font-size: 18px;
     color: #0E2E4B;
     margin: 0 0 8px 0;
 }
 
-article.service-item p {
+section#servicos article.service-item p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 13px;
@@ -288,16 +270,16 @@ article.service-item p {
     margin: 0 0 10px 0;
 }
 
-article.service-item p:last-of-type {
+section#servicos article.service-item p:last-of-type {
     margin-bottom: 0;
 }
 
-article.service-item > div:last-child {
+section#servicos article.service-item > div:last-child {
     margin-top: auto;
     padding-top: 20px;
 }
 
-/* --- Seção Contato --- */
+/* --- CONTATO --- */
 section#contato {
     padding: 60px 20px;
 }
@@ -311,12 +293,9 @@ section#contato h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
-    line-height: 54px;
-    letter-spacing: 0.15em;
     color: #0E2E4B;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 section#contato > div > p:first-of-type {
@@ -334,10 +313,8 @@ section#contato form label {
     display: block;
     margin-bottom: 8px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     font-size: 15px;
-    line-height: 18px;
-    color: #000000;
+    color: #000;
 }
 
 section#contato form input[type="text"],
@@ -361,9 +338,7 @@ section#contato form textarea {
 
 section#contato form ::placeholder {
     font-family: 'Krona One', sans-serif;
-    font-weight: 400;
-    font-size: 12.4859px;
-    line-height: 16px;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.51);
 }
 
@@ -371,12 +346,11 @@ section#contato form button[type="submit"] {
     display: inline-block;
     padding: 12px 30px;
     background: #1DAE54;
-    border-radius: 34.0525px;
+    border-radius: 34px;
     border: none;
     font-family: 'Kodchasan', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
     color: #FFFFFF;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -386,7 +360,7 @@ section#contato form button[type="submit"]:hover {
     background-color: #56b049;
 }
 
-/* --- Botão Flutuante do WhatsApp --- */
+/* --- WHATSAPP FLOAT BUTTON --- */
 .whatsapp-float {
     position: fixed;
     width: 60px;
@@ -415,7 +389,7 @@ section#contato form button[type="submit"]:hover {
     transition: all 0.2s ease-in-out;
 }
 
-/* --- Rodapé --- */
+/* --- RODAPÉ --- */
 section#redes {
     background: #000000;
     color: #f0f0f0;
@@ -466,7 +440,7 @@ section#redes footer p {
     color: #bbbbbb;
 }
 
-/* --- Estilos Responsivos Mobile com Menu Hambúrguer --- */
+/* --- MENU HAMBÚRGUER MOBILE --- */
 .hamburger-checkbox-hidden {
     display: none;
 }
@@ -534,7 +508,6 @@ section#redes footer p {
         padding: 12px 20px;
         border-bottom: 1px solid rgba(112, 42, 120, 0.1);
         font-size: 18px;
-        line-height: 1.5;
     }
 
     header nav.main-nav ul li:last-child a {
