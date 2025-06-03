@@ -282,9 +282,9 @@ article.service-item h4 {
 
 article.service-item p {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 12px;
+   
     color: #000000;
     margin: 0 0 10px 0;
 }
