@@ -283,14 +283,13 @@ article.service-item h4 {
 }
 
 article.service-item p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 1.25;
-    color: #000000;
-    margin: 0;
-    flex-grow: 0.5;
-    padding-bottom: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.25;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 13px;
 }
 
 /* --- Seção Contato --- */
