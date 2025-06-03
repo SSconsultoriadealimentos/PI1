@@ -274,7 +274,7 @@ article.service-item > div:first-child {
 article.service-item h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 17.9708px;
+    font-size: 18px;
     line-height: 21px;
     color: #0E2E4B;
     margin: 0 0 8px 0;
@@ -282,9 +282,9 @@ article.service-item h4 {
 
 article.service-item p {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
-   
+    line-height: 12px;
     color: #000000;
     margin: 0 0 10px 0;
 }
