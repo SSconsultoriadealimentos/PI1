@@ -155,7 +155,8 @@ section#sobre-nos h2 {
     margin-bottom: 20px;
 }
 
-section#sobre-nos p {
+/* Ajuste de especificidade para evitar sobreposição */
+section#sobre-nos > div > div:first-child p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -182,8 +183,6 @@ section#sobre-nos > div > div:last-child > div {
     color: #555;
     font-size: 16px;
 }
-
-
 
 /* --- Seção Serviços --- */
 section#servicos {
@@ -274,7 +273,7 @@ article.service-item > div:first-child {
 article.service-item h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 17.9708px;
     line-height: 21px;
     color: #0E2E4B;
     margin: 0 0 8px 0;
@@ -282,9 +281,9 @@ article.service-item h4 {
 
 article.service-item p {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 12px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.5;
     color: #000000;
     margin: 0 0 10px 0;
 }
@@ -297,9 +296,6 @@ article.service-item > div:last-child {
     margin-top: auto;
     padding-top: 20px;
 }
-
-
-
 
 /* --- Seção Contato --- */
 section#contato {
@@ -419,9 +415,6 @@ section#contato form button[type="submit"]:hover {
     transition: all 0.2s ease-in-out;
 }
 
-
-
-
 /* --- Rodapé --- */
 section#redes {
     background: #000000;
@@ -473,38 +466,28 @@ section#redes footer p {
     color: #bbbbbb;
 }
 
-
-
-
-
-
-/* --- Especificações para Mobile (Menu Hambúrguer e Responsivo Sugestão IA) --- */
-
-/* Checkbox escondido (controlador do menu) */
+/* --- Estilos Responsivos Mobile com Menu Hambúrguer --- */
 .hamburger-checkbox-hidden {
     display: none;
 }
 
-/* Label estilizado como Botão Hambúrguer */
 .hamburger-button-label {
-    display: none; /* Escondido no desktop, mostrado no mobile via media query */
-    margin-left: auto; /* Empurra para a direita se houver espaço no header */
+    display: none;
+    margin-left: auto;
     padding: 10px;
     cursor: pointer;
-    z-index: 1100; /* Acima do menu dropdown */
+    z-index: 1100;
 }
 
-/* Barras do ícone Hambúrguer */
 .hamburger-icon-bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    background-color: #0E2E4B; /* Cor das barras */
+    background-color: #0E2E4B;
     transition: all 0.3s ease-in-out;
 }
 
-/* Animação do Hambúrguer para "X" quando o menu está aberto (checkbox marcado) */
 #hamburger-toggle:checked + .hamburger-button-label .hamburger-icon-bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -517,63 +500,44 @@ section#redes footer p {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Estilos para Telas Pequenas (Mobile) */
 @media (max-width: 768px) {
-
-    /* Mostra o botão hambúrguer (label) no mobile */
     .hamburger-button-label {
         display: block;
     }
 
-    /* Estilos da lista de navegação (ul) no mobile */
     header nav.main-nav ul {
-        /* Posicionamento e Layout */
-        display: none !important; /* Começa escondido */
+        display: none !important;
         position: absolute;
-        top: 100%; /* Abaixo do header */
+        top: 100%;
         left: 0;
-        z-index: 1000; /* Abaixo do botão "X" */
-        
-        /* Dimensões e Espaçamento */
+        z-index: 1000;
         width: 100%;
         padding: 10px 0;
-        gap: 0; /* Reseta o gap do desktop, se houver */
-
-        /* Aparência */
         background-color: #f0f5f1;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
-        
-        /* Flexbox para itens internos */
         flex-direction: column;
         align-items: center;
     }
 
-    /* Mostra a lista de navegação (ul) quando o checkbox está marcado */
     #hamburger-toggle:checked ~ nav.main-nav ul {
-        display: flex !important; /* Mostra o menu */
+        display: flex !important;
     }
 
-    /* Estilos dos itens da lista (li) no menu mobile */
     header nav.main-nav ul li {
         width: 100%;
         text-align: center;
     }
 
-    /* Estilos dos links (a) no menu mobile */
     header nav.main-nav ul li a {
-        display: block; /* Para ocupar toda a largura do li e ter área de clique maior */
+        display: block;
         width: 100%;
         padding: 12px 20px;
         border-bottom: 1px solid rgba(112, 42, 120, 0.1);
-        
-        /* Tipografia */
         font-size: 18px;
         line-height: 1.5;
-        /* color: [Sua cor de link mobile aqui, se diferente do desktop]; */
-        /* text-decoration: none; -- já deve estar herdando ou definido antes */
     }
 
     header nav.main-nav ul li:last-child a {
-        border-bottom: none; /* Remove a borda do último item */
+        border-bottom: none;
     }
 }
