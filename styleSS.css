@@ -183,12 +183,12 @@ section#sobre-nos > div > div:last-child > div {
 section#servicos {
 
     background-color: #f9f9f9;
-    padding: 60px 0;
+    padding: 60px 5px;
 }
 
 section#servicos > div:first-child {
     max-width: 100%;
-    margin: 5px auto;
+    margin: 0 auto;
 }
 
 section#servicos h2 {
