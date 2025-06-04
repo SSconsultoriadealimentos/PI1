@@ -246,7 +246,6 @@ section#servicos article.service-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-botton: 10px;
 }
 
 section#servicos article.service-item > div:first-child {
@@ -285,6 +284,7 @@ section#servicos article.service-item p:last-of-type {
 section#servicos article.service-item > div:last-child {
     margin-top: auto;
     padding-top: 20px;
+    margin-botton: 10px;
 }
 
 /* --- CONTATO --- */
