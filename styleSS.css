@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Kodchasan:wght@700&family=Krona+One&family=Inter:wght@600;700&display=swap');
+o@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Kodchasan:wght@700&family=Krona+One&family=Inter:wght@600;700&display=swap');
 
 /* --- RESET E ESTILOS GLOBAIS --- */
 html, body {
@@ -158,7 +158,7 @@ section#sobre-nos > div > div:last-child {
     flex: 1;
     min-width: 280px;
 }
-
+ii
 section#sobre-nos > div > div:last-child > div {
     width: 100%;
     height: 297px;
@@ -174,7 +174,7 @@ section#sobre-nos > div > div:last-child > div {
 
 /* --- SERVIÇOS --- */
 section#servicos {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: #f9f9f9;
 }
 
@@ -254,7 +254,7 @@ section#servicos article.service-item > div:first-child {
 }
 
 section#servicos article.service-item h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', llsans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #0E2E4B;
