@@ -182,7 +182,7 @@ section#sobre-nos > div > div:last-child > div {
 section#servicos {
 
     background-color: #f9f9f9;
-    padding-top: 5px;
+    padding: 5px;
 }
 
 section#servicos > div:first-child {
