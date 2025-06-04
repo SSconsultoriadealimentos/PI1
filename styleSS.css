@@ -188,7 +188,7 @@ section#servicos {
 
 section#servicos > div:first-child {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 section#servicos h2 {
