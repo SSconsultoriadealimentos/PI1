@@ -204,7 +204,7 @@ section#servicos > div > p:first-of-type {
 
 section#servicos > div > div:last-of-type {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     gap: 25px;
 }
 
