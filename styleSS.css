@@ -205,7 +205,7 @@ section#servicos > div > p:first-of-type {
 section#servicos > div > div:last-of-type {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
 section#servicos button {
