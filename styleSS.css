@@ -246,6 +246,7 @@ section#servicos article.service-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-botton: 10px;
 }
 
 section#servicos article.service-item > div:first-child {
