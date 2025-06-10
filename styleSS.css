@@ -215,7 +215,7 @@ section#contato form textarea {
 }
 
 section#contato form button {
-	width: 100%;
+    width: 100%;
     padding: 0.625rem 1.25rem;
     border: none;
     background-color: #1DAE54;
@@ -258,7 +258,7 @@ footer a {
     font-size: 15px;
     display: inline-flex;
     align-items: center;
-	gap: 0.5rem;
+    gap: 0.5rem;
 }
 
 
@@ -282,6 +282,9 @@ footer p {
     font-size: 13px;
     color: #bbbbbb;
 }
+
+
+
 /* ---------------- Botão Flutuante WhatsApp ---------------- */
 .whatsapp-float {
     position: fixed;
@@ -305,12 +308,12 @@ footer p {
     display: block;
 }
 
-
 .whatsapp-float:hover {
     background-color: #1DAE54;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
 }
+
 
 /* ---------------- Estilos Mobile ---------------- */
 @media screen and (max-width: 768px) {
@@ -326,11 +329,9 @@ header .col.logo {
     background-size: contain; 
     background-position: center;
 }
-
 header .col.menu {
     display: none;
 }
-
 header .col.social {
     display: none;
 }
@@ -342,7 +343,7 @@ header .col.social {
     height: auto;
     background-image: none;
     display: block;
-	padding: 2rem;
+    padding: 2rem;
   }
   section#nos::after {
     content: "";
@@ -350,23 +351,21 @@ header .col.social {
     width: 100%;
     aspect-ratio: 3/4; 
     background-image: url('img/banner.png');
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-	border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
     background-size: cover;
     background-position: left center;
-	
-	flex-direction: column;
+    flex-direction: column;
     align-items: center;
-	padding: 0;
-	margin-top: 2rem;
+    padding: 0;
+    margin-top: 2rem;
   }
   
   section#nos .texto-sobre-imagem {
     max-width: 100%;
-	padding: 0;
+    padding: 0;
   }
 
-    
     
 /* Sessão Serviços Mobile */
     
@@ -376,8 +375,8 @@ header .col.social {
     section#servicos .card-section {
         flex-direction: column;
         align-items: center;
-		padding: 0;
-		margin-top: 2rem;
+	padding: 0;
+	margin-top: 2rem;
 		
     }
 
@@ -390,17 +389,17 @@ header .col.social {
 /* Sessão Contato Mobile */
 
    section#contato {
-	padding: 2rem;
+    padding: 2rem;
     flex-direction: column;
     }
 
     section#contato .formulario,
     section#contato .mapa {
-        flex: 1 1 100%;
+    flex: 1 1 100%;
 
     }
-	 section#contato .formulariobox {
-	margin-top: 2rem;
+    section#contato .formulariobox {
+    margin-top: 2rem;
   }
 
 }
