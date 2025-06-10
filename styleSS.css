@@ -1,383 +1,297 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Kodchasan:wght@700&family=Krona+One&family=Inter:wght@600;700&display=swap');
 
-/* --- RESET E ESTILOS GLOBAIS --- */
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
+/* ---------------- Estilos Globais ---------------- */
 body {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     position: relative;
-}
-
-/* --- CABEÇALHO --- */
-header {
-    background: #F8F7F5;
-    padding: 15px 0;
-}
-
-header > div {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    background-image: url('img/logoSS.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left center;
-    width: 150px;
-    height: 50px;
-    text-indent: -9999px;
-    overflow: hidden;
-    font-size: 0;
-    color: transparent;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-}
-
-header nav ul {
     font-family: 'Inter', sans-serif;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    font-size: 1rem;
+    background-color: #F8F7F5;
 }
 
-header nav ul li a {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.08em;
-    color: #1DAE54;
-    text-decoration: none;
-    padding: 5px 0;
+h1 {
+    font-size: 0;
 }
 
-header nav ul li a:hover {
-    opacity: 0.8;
-}
-
-/* --- HERO SECTION --- */
-section.hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 65px 45px;
-    gap: 32px;
-    min-height: 350px;
-    background-color: #f0e6f2;
-    background-image: url('img/imagem-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-
-section.hero-section > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    max-width: 870px;
-    filter: drop-shadow(0px 1px 1px #D9D9D9);
-}
-
-section.hero-section h2 {
+h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: clamp(40px, 5vw, 72px);
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
     color: #0E304C;
     margin: 0;
 }
 
-section.hero-section p {
+p {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: clamp(18px, 3vw, 24px);
-    color: #1DAE54;
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+    color: #555;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
 }
 
-
-
-
-/* --- SOBRE NÓS --- */
-section#sobre-nos {
-    padding: 60px 20px;
+/* ---------------- Cabeçalho ---------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    gap: 1.25rem;
 }
 
-section#sobre-nos > div {
-    max-width: 1100px;
-    margin: 0 auto;
+header .col {
+    flex: 1;
+}
+
+header .col.logo {
+    flex-basis: 33%;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 6rem;
+}
+
+header .col.menu {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+header .col.social {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+header .social-icon-img {    
+	width: 2rem;
+    height: 2rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+	font-size: clamp(0.85rem, 2vw, 1rem);
+    color: #2DA145; 
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+/* ---------------- Seção Sobre Nós ---------------- */
+section#nos {
+    position: relative;
+    height: 25rem;
+    background-image: url('img/banner.png');
+    background-size: contain;
+	background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+section#nos .texto-sobre-imagem {
+    padding: 1.5rem;
+    max-width: 50%;
+}
+
+/* ---------------- Seção Serviços ---------------- */
+section#servicos {
+    padding: 4rem 1.25rem;
+}
+
+section#servicos .card-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-section#sobre-nos > div > div:first-child {
-    flex: 2;
-    min-width: 300px;
-}
-
-section#sobre-nos > div > div:first-child h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    color: #0E2E4B;
-    margin: 0 0 20px 0;
-}
-
-section#sobre-nos > div > div:first-child p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.8;
-    letter-spacing: 0.1em;
-    color: rgba(51, 51, 51, 0.83);
-    margin-bottom: 15px;
-}
-
-section#sobre-nos > div > div:last-child {
-    flex: 1;
-    min-width: 280px;
-}
-section#sobre-nos > div > div:last-child > div {
-    width: 100%;
-    height: 297px;
-    background: #E2C8C8;
-    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
+    gap: 1.5rem;
     justify-content: center;
-    color: #555;
-    font-size: 16px;
-    margin-top: 1px;
+    padding-top: 2.5rem;
 }
 
-
-
-
-
-/* --- SERVIÇOS --- */
-section#servicos {
-
-    background-color: #f9f9f9;
-    padding: 60px 5px;
-}
-
-section#servicos > div:first-child {
-    max-width: 100%;
-    margin: 10px auto;
-}
-
-section#servicos h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    color: #0E2E4B;
-    text-align: center;
-    margin: 0 0 15px 0;
-}
-
-section#servicos > div > p:first-of-type {
-    font-size: 18px;
-    text-align: center;
-    color: #555;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section#servicos > div > div:last-of-type {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-}
-
-section#servicos button {
+section#servicos .card {
+    background: #fff;
+	border: 0.748783px solid #2DA145;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
+    overflow: hidden;
     width: 100%;
-    background: #0E2E4B;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Kodchasan', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 12px;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
+    max-width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
 }
 
-section#servicos button:hover {
-    background-color: #1DAE54;
-    opacity: 0.7;
+section#servicos .card:hover {
+    transform: translateY(-0.3125rem);
 }
 
-section#servicos article.service-item {
-    box-sizing: border-box;
+section#servicos .card img {
     width: 100%;
-    min-height: 297px;
-    background: #FFFFFF;
-    border: 1px solid #2DA145;
-    box-shadow: 0px 3px 3px rgba(112, 42, 120, 0.15);
-    border-radius: 11px;
-    padding: 15px;
+    height: 11.25rem;
+    object-fit: cover;
+	object-position: top;
+}
+
+section#servicos .card-content {
+    padding: 1.25rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-section#servicos article.service-item > div:first-child {
-    width: 100%;
-    height: 160px;
-    background: #D9D9D9;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-}
-
-section#servicos article.service-item h4 {
-    font-family: 'Roboto', llsans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #0E2E4B;
-    margin: 0 0 8px 0;
-}
-
-section#servicos article.service-item p {
+section#servicos .card-content h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
+    font-size: 1.125rem;
+    color: #0E2E4B;
+    margin-bottom: 0.625rem;
+}
+
+section#servicos .card-content p {
+    font-size: 0.9375rem;
+    color: #555;
+    margin-bottom: 1.25rem;
     line-height: 1.5;
-    color: #000000;
-    margin: 0 0 8px 0;
+    flex-grow: 1;
 }
 
-section#servicos article.service-item p:last-of-type {
-    margin-bottom: 0;
-}
-
-section#servicos article.service-item > div:last-child {
-    margin-top: auto;
-    padding-top: 20px;
-    margin-botton: 10px;
-}
-
-/* --- CONTATO --- */
-section#contato {
-    padding: 60px 20px;
-}
-
-section#contato > div:first-child {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-section#contato h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    color: #0E2E4B;
-    text-align: center;
-    margin: 0 0 15px 0;
-}
-
-section#contato > div > p:first-of-type {
-    font-size: 18px;
-    text-align: center;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-section#contato form div {
-    margin-bottom: 20px;
-}
-
-section#contato form label {
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    color: #000;
-}
-
-section#contato form input[type="text"],
-section#contato form input[type="number"],
-section#contato form input[type="email"],
-section#contato form textarea {
-    width: 100%;
-    padding: 12px 15px;
-    background: #F4EFEF;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #333;
-}
-
-section#contato form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-section#contato form ::placeholder {
-    font-family: 'Krona One', sans-serif;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.51);
-}
-
-section#contato form button[type="submit"] {
+section#servicos .card-button {
     display: inline-block;
-    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
     background: #1DAE54;
-    border-radius: 34px;
-    border: none;
-    font-family: 'Kodchasan', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FFFFFF;
-    cursor: pointer;
+    color: #FFF;
+    border-radius: 0.375rem;
+    font-family: 'Inter', sans-serif;
     transition: background-color 0.3s ease;
+    align-self: flex-start;
 }
 
-section#contato form button[type="submit"]:hover {
+section#servicos .card-button:hover {
     background-color: #56b049;
 }
 
-/* --- WHATSAPP FLOAT BUTTON --- */
+/* ---------------- Seção Contato ---------------- */
+section#contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+    padding: 4rem 1.25rem;
+}
+
+section#contato .formulario,
+section#contato .mapa {
+    flex: 1 1 45%;
+}
+
+section#contato form input,
+section#contato form textarea {
+    width: 95%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.375rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#contato form button {
+	width: 100%;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    background-color: #1DAE54;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+section#contato iframe {
+    width: 100%;
+    height: 75%;
+    border: 0;
+	
+}
+
+section#contato .mapa p {
+    font-size: 13px;
+ 
+}
+/* ---------------- Rodapé ---------------- */
+footer {
+    background-color: #000;
+    color: #f0f0f0;
+    padding: 2rem 1.25rem;
+    text-align: center;
+}
+
+footer > div {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+	gap: 0.5rem;
+}
+
+
+footer a:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
+footer a .social-icon-img {
+    width: 20px;
+    height: 20px;
+    display: block;
+	color: #FFF;
+}
+
+footer a .social-link-item {
+	gap: 10rem;
+}
+
+footer p {
+    font-size: 13px;
+    color: #bbbbbb;
+}
+/* ---------------- Botão Flutuante WhatsApp ---------------- */
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 30px;
+    width: 3.75rem;
+    height: 3.75rem;
+    bottom: 2rem;
+    right: 2rem;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.125rem 0.125rem 0.375rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -386,10 +300,11 @@ section#contato form button[type="submit"]:hover {
 }
 
 .whatsapp-float img {
-    width: 55px;
-    height: 55px;
+    width: 3.4375rem;
+    height: 3.4375rem;
     display: block;
 }
+
 
 .whatsapp-float:hover {
     background-color: #1DAE54;
@@ -397,128 +312,95 @@ section#contato form button[type="submit"]:hover {
     transition: all 0.2s ease-in-out;
 }
 
-/* --- RODAPÉ --- */
-section#redes {
-    background: #000000;
-    color: #f0f0f0;
-    padding: 30px 20px;
-    margin-top: 60px;
+/* ---------------- Estilos Mobile ---------------- */
+@media screen and (max-width: 768px) {
+
+/* Menu Mobile */
+
+header .col.logo {
+    flex-basis: 100%;
+    width: 100%;
+    height: 150px; 
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
 }
 
-section#redes footer > div {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
-
-section#redes footer > div > div:first-child {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-section#redes footer a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 15px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-section#redes footer a:hover {
-    opacity: 0.7;
-    transition: all 0.2s ease-in-out;
-}
-
-section#redes footer a .social-icon-img {
-    width: 20px;
-    height: 20px;
-    display: block;
-}
-
-section#redes footer p {
-    margin: 0;
-    font-size: 13px;
-    color: #bbbbbb;
-}
-
-/* --- MENU HAMBÚRGUER MOBILE --- */
-.hamburger-checkbox-hidden {
+header .col.menu {
     display: none;
 }
 
-.hamburger-button-label {
+header .col.social {
     display: none;
-    margin-left: auto;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1100;
 }
 
-.hamburger-icon-bar {
+    
+/* Sessão Nós Mobile*/
+
+  section#nos {
+    height: auto;
+    background-image: none;
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: #0E2E4B;
-    transition: all 0.3s ease-in-out;
-}
+	padding: 2rem;
+  }
+  section#nos::after {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/4; 
+    background-image: url('img/banner.png');
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	border-radius: 0.75rem;
+    background-size: cover;
+    background-position: left center;
+	
+	flex-direction: column;
+    align-items: center;
+	padding: 0;
+	margin-top: 2rem;
+  }
+  
+  section#nos .texto-sobre-imagem {
+    max-width: 100%;
+	padding: 0;
+  }
 
-#hamburger-toggle:checked + .hamburger-button-label .hamburger-icon-bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-#hamburger-toggle:checked + .hamburger-button-label .hamburger-icon-bar:nth-child(2) {
-    opacity: 0;
-}
-
-#hamburger-toggle:checked + .hamburger-button-label .hamburger-icon-bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-@media (max-width: 768px) {
-    .hamburger-button-label {
-        display: block;
-    }
-
-    header nav.main-nav ul {
-        display: none !important;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1000;
-        width: 100%;
-        padding: 10px 0;
-        background-color: #f0f5f1;
-        box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    
+    
+/* Sessão Serviços Mobile */
+    
+  section#servicos {
+	padding: 2rem;
+  }
+    section#servicos .card-section {
         flex-direction: column;
         align-items: center;
+		padding: 0;
+		margin-top: 2rem;
+		
     }
 
-    #hamburger-toggle:checked ~ nav.main-nav ul {
-        display: flex !important;
+    section#servicos .card {
+        max-width: 100%;
     }
 
-    header nav.main-nav ul li {
-        width: 100%;
-        text-align: center;
+
+
+/* Sessão Contato Mobile */
+
+   section#contato {
+	padding: 2rem;
+    flex-direction: column;
     }
 
-    header nav.main-nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 12px 20px;
-        border-bottom: 1px solid rgba(112, 42, 120, 0.1);
-        font-size: 18px;
-    }
+    section#contato .formulario,
+    section#contato .mapa {
+        flex: 1 1 100%;
 
-    header nav.main-nav ul li:last-child a {
-        border-bottom: none;
     }
+	 section#contato .formulariobox {
+	margin-top: 2rem;
+  }
+
 }
