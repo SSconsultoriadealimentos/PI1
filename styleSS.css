@@ -12,11 +12,14 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .sobre-nos .texto-sobre-imagem {
     padding: 1.5rem;
     max-width: 50%;
+    box-sizing: border-box;
+    word-break: break-word;
 }
 
 /* ---------------- Seção Serviços ---------------- */
