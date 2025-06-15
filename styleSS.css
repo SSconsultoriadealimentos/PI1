@@ -1,149 +1,205 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SS Consultoria</title>
-    <meta name="description" content="SS Consultoria - Qualidade e Segurança dos Alimentos. Consultoria especializada em boas práticas de fabricação, rotulagem e adequação à legislação da Anvisa. CNPJ: 54.502.577/0001-20, localizada na QE 44 Conjunto H, Guará II, Brasília, DF, CEP: 71.070-087." />
-    <link rel="stylesheet" href="styleSS.css" />
-</head>
-<body>
 
-    <header>
-        <div class="col logo">
-            <h1>SS Consultoria</h1>
-        </div>
+/* ---------------- Seção Sobre Nós ---------------- */
+.sobre-nos {
+    position: relative;
+    height: 25rem;
+    background-image: url('img/banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 2rem;
+    flex-wrap: wrap; 
+}
 
-        <div class="col menu">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#nos">Sobre Nós</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+.sobre-nos .texto-sobre-imagem {
+    padding: 1.5rem;
+    max-width: 50%;
+    box-sizing: border-box; 
+    word-break: break-word; 
+}
 
-        <div class="col social">
-            <a href="#"><img src="img/icone-instagram-verde-full.png" alt="Instagram" class="social-icon-img" /></a>
-            <a href="#"><img src="img/icone-linkedin-verde-full.png" alt="LinkedIn" class="social-icon-img" /></a>
-        </div>
-    </header>
+/* ---------------- Seção Serviços ---------------- */
+.servicos {
+    padding: 4rem 1.25rem;
+}
 
-    <main>
-        <section id="nos" class="sobre-nos">
-            <div class="texto-sobre-imagem">
-                <h2>Sobre Nós</h2>
-                <p>A <strong>SS Consultoria de Alimentos</strong> é uma empresa especializada em <strong>segurança alimentar</strong>, <strong>controle de qualidade</strong> e <strong>adequação sanitária</strong> para o setor de alimentos. Atuamos desde 2018 com foco em <strong>pequenos e médios negócios alimentícios</strong>, oferecendo soluções que aliam rigor técnico, atendimento personalizado e conformidade com as normas da <strong>Anvisa</strong>.</p>
-                <p>Fundada por <strong>Sue Ellem Rodrigues de Queiroz</strong> e <strong>Solange Queiroz</strong>, a SS Consultoria combina experiências em <strong>gestão de processos</strong>, <strong>boas práticas de fabricação (BPF)</strong> e <strong>vigilância sanitária</strong>, atendendo restaurantes, padarias, laticínios, cozinhas industriais e pequenos fabricantes.</p>
-                <p>Entre os principais serviços estão: <strong>implantação de boas práticas</strong>, <strong>auditorias internas</strong>, <strong>treinamentos</strong>, <strong>documentação exigida pela legislação sanitária</strong> e <strong>apoio no desenvolvimento de produtos alimentícios</strong>.</p>
-                <p>Com atendimento prático, próximo e qualificado, a SS Consultoria é parceira ideal para empresas que buscam qualidade, regularização e crescimento com segurança.</p>
-            </div>
-        </section>
+.servicos .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
 
-        <section id="servicos" class="servicos">
-            <div>
-                <h2>Serviços</h2>
-                <p>Confira tudo que a <strong>SS Consultoria</strong> pode oferecer para sua empresa. Soluções alinhadas à <strong>legislação da Anvisa</strong> e às <strong>boas práticas de fabricação</strong>, com foco em resultados.</p>
+.servicos .card {
+    background: #fff;
+    border: 0.748783px solid #2DA145;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 100%;
+    max-width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
 
-                <div class="card-section">
-                    <div class="card">
-                        <img src="img/manual.jpg" alt="Manual de Boas Práticas e POPs">
-                        <div class="card-content">
-                            <h4>Manual de Boas Práticas e POPs</h4>
-                            <p>Documentos exigidos pela legislação para segurança dos alimentos em comércios alimentícios.</p>
-                            <a href="https://wa.me/5561991931407?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Manual%20de%20Boas%20Pr%C3%A1ticas%20e%20POPs" class="card-button" target="_blank">Fale com nossas consultoras →</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/rotulo.jpg" alt="Elaboração de Rótulos de Alimentos">
-                        <div class="card-content">
-                            <h4>Elaboração de Rótulos</h4>
-                            <p>Rótulos completos e adequados às normas da Anvisa, com destaque nutricional e lista de ingredientes correta.</p>
-                            <a href="https://wa.me/5561991931407?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Elabora%C3%A7%C3%A3o%20de%20R%C3%B3tulos" class="card-button" target="_blank">Fale com nossas consultoras →</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/curso.jpg" alt="Cursos de Boas Práticas">
-                        <div class="card-content">
-                            <h4>Cursos de Boas Práticas</h4>
-                            <p>Capacitações para equipes sobre manipulação segura de alimentos e exigências legais.</p>
-                            <a href="https://wa.me/5561991931407?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Cursos%20de%20Boas%20Pr%C3%A1ticas" class="card-button" target="_blank">Fale com nossas consultoras →</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/artess.png" alt="Consultoria Sanitária">
-                        <div class="card-content">
-                            <h4>Consultoria Sanitária</h4>
-                            <p>Acompanhamento completo para adequação sanitária do seu estabelecimento.</p>
-                            <a href="https://wa.me/5561991931407?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Consultoria%20Sanit%C3%A1ria" class="card-button" target="_blank">Fale com nossas consultoras →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+.servicos .card:hover {
+    transform: translateY(-0.3125rem);
+}
 
-        <section id="contato" class="contato">
-            <div class="formulario">
-                <h2>Contato</h2>
-                <p>Nos envie uma mensagem e retornaremos em seguida</p>
-                <div class="formulariobox">
-                    <form action="#" method="post">
-                        <div>
-                            <label for="nome">Nome e Sobrenome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Escreva aqui seu nome">
-                        </div>
-                        <div>
-                            <label for="telefone">Telefone</label>
-                            <input type="number" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="SeuEmail@provedor.com">
-                        </div>
-                        <div>
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem para nós. Retornaremos pelo email ou telefone deixado como contato"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+.servicos .card img {
+    width: 100%;
+    height: 11.25rem;
+    object-fit: cover;
+    object-position: top;
+}
 
-            <div class="mapa">
-                <h4>Onde estamos?</h4>
-                <p><strong>SS Consultoria - Qualidade e Segurança dos Alimentos</strong><br>
-                CNPJ: 54.502.577/0001-20<br>
-                QE 44 Conjunto H, Guará II<br>
-                Brasília, DF - CEP: 71.070-087</p><br>
+.servicos .card-content {
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.1288610061993!2d-47.9659731256262!3d-15.849823224320899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2e337ab4a84d%3A0xc04e23ccba6046cd!2sQE%2044%20Cj.%20H%20-%20Guar%C3%A1%20II%20QE%2044%20-%20Guar%C3%A1%2C%20Bras%C3%ADlia%20-%20DF%2C%2071070-440!5e0!3m2!1spt-BR!2sbr!4v1750013831492!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+.servicos .card-content h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    color: #0E2E4B;
+    margin-bottom: 0.625rem;
+}
 
-        <a href="https://wa.me/5561991931407?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
-            <img src="img/WhatsApp_Logo.png" alt="WhatsApp">
-        </a>
+.servicos .card-content p {
+    font-size: 0.9375rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
 
-        <section id="footer">
-            <footer>
-                <div class="footer-container">
-                    <div class="social-icons">
-                        <a href="#" aria-label="Instagram" class="social-link-item">
-                            <span class="social-text">Instagram</span>
-                            <img src="img/icone-instagram-branco.png" alt="Instagram" class="social-icon-img">
-                        </a>
-                        <a href="#" aria-label="LinkedIn" class="social-link-item">
-                            <span class="social-text">LinkedIn</span>
-                            <img src="img/icone-linkedin-branco.png" alt="LinkedIn" class="social-icon-img">
-                        </a>
-                    </div>
-                    <p class="copyright">&copy; 2025 SS Consultoria. Todos os direitos reservados.</p>
-                </div>
-            </footer>
-        </section>
-    </main>
-</body>
-</html>
+.servicos .card-button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    background: #1DAE54;
+    color: #FFF;
+    border-radius: 0.375rem;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.servicos .card-button:hover {
+    background-color: #56b049;
+}
+
+/* ---------------- Seção Contato ---------------- */
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+    padding: 4rem 1.25rem;
+}
+
+.contato .formulario,
+.contato .mapa {
+    flex: 1 1 45%;
+}
+
+.contato form input,
+.contato form textarea {
+    width: 95%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.375rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contato form button {
+    padding: 0.625rem 1.25rem;
+    border: none;
+    background-color: #1DAE54;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.contato iframe {
+    width: 95%;
+    height: 18.75rem;
+    border: 0;
+}
+
+.contato .mapa p {
+    font-size: 13px;
+}
+
+/* ---------------- Estilos Mobile ---------------- */
+@media screen and (max-width: 768px) {
+
+    .sobre-nos {
+        height: auto;
+        background-image: none;
+        display: block;
+        padding: 2rem;
+    }
+
+    .sobre-nos::after {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 3/4;
+        background-image: url('img/banner.png');
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 0.75rem;
+        background-size: cover;
+        background-position: left center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .sobre-nos .texto-sobre-imagem {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .servicos {
+        padding: 2rem;
+    }
+
+    .servicos .card-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .servicos .card {
+        max-width: 100%;
+    }
+
+    .contato {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .contato .formulario,
+    .contato .mapa {
+        flex: 1 1 100%;
+    }
+
+    .contato .formulariobox {
+        margin-top: 2rem;
+    }
+
+}
