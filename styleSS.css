@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Kodchasan:wght@700&family=Krona+One&family=Inter:wght@600;700&display=swap');
-
 /* ---------------- Estilos Globais ---------------- */
 body {
     width: 100%;
@@ -12,6 +10,8 @@ body {
 
 h1 {
     font-size: 0;
+    position: absolute;
+    left: -9999px;
 }
 
 h2 {
@@ -66,9 +66,9 @@ header .col.social {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-
 }
-header .social-icon-img {    
+
+header .social-icon-img {
     width: 2rem;
     height: 2rem;
 }
@@ -86,7 +86,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: 600;
     font-size: clamp(0.85rem, 2vw, 1rem);
-    color: #2DA145; 
+    color: #2DA145;
     font-family: 'Inter', sans-serif;
 }
 
@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 /* ---------------- Seção Sobre Nós ---------------- */
-section#nos {
+.sobre-nos {
     position: relative;
     height: 25rem;
     background-image: url('img/banner.png');
@@ -108,17 +108,17 @@ section#nos {
     padding: 2rem;
 }
 
-section#nos .texto-sobre-imagem {
+.sobre-nos .texto-sobre-imagem {
     padding: 1.5rem;
     max-width: 50%;
 }
 
 /* ---------------- Seção Serviços ---------------- */
-section#servicos {
+.servicos {
     padding: 4rem 1.25rem;
 }
 
-section#servicos .card-section {
+.servicos .card-section {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -126,7 +126,7 @@ section#servicos .card-section {
     padding-top: 2.5rem;
 }
 
-section#servicos .card {
+.servicos .card {
     background: #fff;
     border: 0.748783px solid #2DA145;
     border-radius: 0.75rem;
@@ -139,18 +139,18 @@ section#servicos .card {
     transition: transform 0.2s ease-in-out;
 }
 
-section#servicos .card:hover {
+.servicos .card:hover {
     transform: translateY(-0.3125rem);
 }
 
-section#servicos .card img {
+.servicos .card img {
     width: 100%;
     height: 11.25rem;
     object-fit: cover;
     object-position: top;
 }
 
-section#servicos .card-content {
+.servicos .card-content {
     padding: 1.25rem;
     flex: 1;
     display: flex;
@@ -158,14 +158,14 @@ section#servicos .card-content {
     justify-content: space-between;
 }
 
-section#servicos .card-content h4 {
+.servicos .card-content h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     color: #0E2E4B;
     margin-bottom: 0.625rem;
 }
 
-section#servicos .card-content p {
+.servicos .card-content p {
     font-size: 0.9375rem;
     color: #555;
     margin-bottom: 1.25rem;
@@ -173,7 +173,7 @@ section#servicos .card-content p {
     flex-grow: 1;
 }
 
-section#servicos .card-button {
+.servicos .card-button {
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
@@ -187,25 +187,25 @@ section#servicos .card-button {
     align-self: flex-start;
 }
 
-section#servicos .card-button:hover {
+.servicos .card-button:hover {
     background-color: #56b049;
 }
 
 /* ---------------- Seção Contato ---------------- */
-section#contato {
+.contato {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem 4rem;
     padding: 4rem 1.25rem;
 }
 
-section#contato .formulario,
-section#contato .mapa {
+.contato .formulario,
+.contato .mapa {
     flex: 1 1 45%;
 }
 
-section#contato form input,
-section#contato form textarea {
+.contato form input,
+.contato form textarea {
     width: 95%;
     padding: 0.625rem;
     margin-bottom: 1rem;
@@ -214,7 +214,7 @@ section#contato form textarea {
     font-family: 'Poppins', sans-serif;
 }
 
-section#contato form button {
+.contato form button {
     width: 100%;
     padding: 0.625rem 1.25rem;
     border: none;
@@ -225,17 +225,16 @@ section#contato form button {
     cursor: pointer;
 }
 
-section#contato iframe {
+.contato iframe {
     width: 100%;
     height: 75%;
     border: 0;
-	
 }
 
-section#contato .mapa p {
+.contato .mapa p {
     font-size: 13px;
- 
 }
+
 /* ---------------- Rodapé ---------------- */
 footer {
     background-color: #000;
@@ -252,6 +251,7 @@ footer > div {
     align-items: center;
     gap: 1.25rem;
 }
+
 footer a {
     color: #FFFFFF;
     text-decoration: none;
@@ -260,7 +260,6 @@ footer a {
     align-items: center;
     gap: 0.5rem;
 }
-
 
 footer a:hover {
     opacity: 0.7;
@@ -271,7 +270,7 @@ footer a .social-icon-img {
     width: 20px;
     height: 20px;
     display: block;
-	color: #FFF;
+    color: #FFF;
 }
 
 footer a .social-link-item {
@@ -282,8 +281,6 @@ footer p {
     font-size: 13px;
     color: #bbbbbb;
 }
-
-
 
 /* ---------------- Botão Flutuante WhatsApp ---------------- */
 .whatsapp-float {
@@ -314,92 +311,79 @@ footer p {
     transition: all 0.2s ease-in-out;
 }
 
-
 /* ---------------- Estilos Mobile ---------------- */
 @media screen and (max-width: 768px) {
 
-/* Menu Mobile */
-
-header .col.logo {
-    flex-basis: 100%;
-    width: 100%;
-    height: 150px; 
-    background-image: url('img/logo.png');
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: center;
-}
-header .col.menu {
-    display: none;
-}
-header .col.social {
-    display: none;
-}
-
-    
-/* Sessão Nós Mobile*/
-
-  section#nos {
-    height: auto;
-    background-image: none;
-    display: block;
-    padding: 2rem;
-  }
-  section#nos::after {
-    content: "";
-    display: block;
-    width: 100%;
-    aspect-ratio: 3/4; 
-    background-image: url('img/banner.png');
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 0.75rem;
-    background-size: cover;
-    background-position: left center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-top: 2rem;
-  }
-  
-  section#nos .texto-sobre-imagem {
-    max-width: 100%;
-    padding: 0;
-  }
-
-    
-/* Sessão Serviços Mobile */
-    
-  section#servicos {
-	padding: 2rem;
-  }
-    section#servicos .card-section {
-        flex-direction: column;
-        align-items: center;
-	padding: 0;
-	margin-top: 2rem;
-		
+    header .col.logo {
+        flex-basis: 100%;
+        width: 100%;
+        height: 150px;
+        background-image: url('img/logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
-    section#servicos .card {
+    header .col.menu,
+    header .col.social {
+        display: none;
+    }
+
+    .sobre-nos {
+        height: auto;
+        background-image: none;
+        display: block;
+        padding: 2rem;
+    }
+
+    .sobre-nos::after {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 3/4;
+        background-image: url('img/banner.png');
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 0.75rem;
+        background-size: cover;
+        background-position: left center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .sobre-nos .texto-sobre-imagem {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .servicos {
+        padding: 2rem;
+    }
+
+    .servicos .card-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .servicos .card {
         max-width: 100%;
     }
 
-
-
-/* Sessão Contato Mobile */
-
-   section#contato {
-    padding: 2rem;
-    flex-direction: column;
+    .contato {
+        padding: 2rem;
+        flex-direction: column;
     }
 
-    section#contato .formulario,
-    section#contato .mapa {
-    flex: 1 1 100%;
-
+    .contato .formulario,
+    .contato .mapa {
+        flex: 1 1 100%;
     }
-    section#contato .formulariobox {
-    margin-top: 2rem;
-  }
+
+    .contato .formulariobox {
+        margin-top: 2rem;
+    }
 
 }
