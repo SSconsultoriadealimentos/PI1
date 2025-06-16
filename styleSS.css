@@ -326,7 +326,7 @@ footer p {
 @media screen and (max-width: 768px) {
 
     header .col.logo {
-        flex-basis: 100%;
+       
         width: 100%;
         height: 150px;
         background-image: url('img/logo.png');
@@ -336,7 +336,9 @@ footer p {
     }
 
     header .col.menu {
-        display: none;
+ 
+        display: flex;
+        justify-content: center;
     }
 
     header .col.social {
