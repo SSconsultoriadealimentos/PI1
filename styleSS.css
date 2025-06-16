@@ -100,7 +100,7 @@ nav ul li a:hover {
 /* ---------------- Seção Sobre Nós ---------------- */
 .sobre-nos {
     position: relative;
-    min-height: 25rem;
+    min-height: 20rem;
     background-image: url('img/banner.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -116,7 +116,6 @@ nav ul li a:hover {
     padding: 1.5rem;
     max-width: 50%;
     box-sizing: border-box;
-    word-break: break-word;
     overflow-wrap: break-word;
 }
 
