@@ -228,6 +228,7 @@ nav ul li a:hover {
     font-weight: 700;
     border-radius: 0.375rem;
     cursor: pointer;
+    width: 100%;
 }
 
 .contato iframe {
