@@ -240,6 +240,10 @@ nav ul li a:hover {
     font-size: 13px;
 }
 
+.contato .formulariobox {
+    padding-top: 2.5rem;     
+ }
+
 
 /* ---------------- Rodapé ---------------- */
 footer {
@@ -393,5 +397,6 @@ footer p {
 
     .contato .formulariobox {
         margin-top: 2rem;
+        
     }
 }
