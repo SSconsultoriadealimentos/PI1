@@ -102,7 +102,7 @@ nav ul li a:hover {
     position: relative;
     min-height: 20rem;
     background-image: url('img/banner.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
     display: flex;
