@@ -232,6 +232,9 @@ nav ul li a:hover {
 }
 
 .contato iframe {
+    width: 95%;
+    height: 80%;
+    border: 0;
 }
 
 .contato .mapa p {
