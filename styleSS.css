@@ -325,6 +325,11 @@ footer p {
 /* ---------------- Estilos Mobile ---------------- */
 @media screen and (max-width: 768px) {
 
+    header {
+    display: flow-root;
+    padding: 1.25rem;
+}
+
     header .col.logo {
        
         width: 100%;
