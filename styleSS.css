@@ -12,7 +12,10 @@ body {
 
 h1 {
     font-size: 0;
+    position: absolute;
+    left: -9999px;
 }
+
 
 h2 {
     font-family: 'Inter', sans-serif;
@@ -235,6 +238,54 @@ nav ul li a:hover {
 
 .contato .mapa p {
     font-size: 13px;
+}
+
+
+/* ---------------- Rodapé ---------------- */
+footer {
+    background-color: #000;
+    color: #f0f0f0;
+    padding: 2rem 1.25rem;
+    text-align: center;
+}
+
+footer > div {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer a:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
+footer a .social-icon-img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    color: #FFF;
+}
+
+footer a .social-link-item {
+    gap: 10rem;
+}
+
+footer p {
+    font-size: 13px;
+    color: #bbbbbb;
 }
 
 /* ---------------- Botão Flutuante WhatsApp ---------------- */
