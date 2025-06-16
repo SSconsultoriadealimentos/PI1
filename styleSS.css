@@ -202,7 +202,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem 4rem;
-    padding: 4rem 1.25rem;
+    padding: 4rem 2rem;
 }
 
 .contato .formulario,
@@ -232,9 +232,6 @@ nav ul li a:hover {
 }
 
 .contato iframe {
-    width: 95%;
-    height: 18.75rem;
-    border: 0;
 }
 
 .contato .mapa p {
