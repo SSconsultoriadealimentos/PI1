@@ -106,6 +106,7 @@ nav ul li a:hover {
     align-items: flex-start;
     justify-content: flex-end;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .sobre-nos .texto-sobre-imagem {
