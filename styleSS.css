@@ -114,7 +114,7 @@ nav ul li a:hover {
 
 .sobre-nos .texto-sobre-imagem {
     padding: 1.5rem;
-    max-width: 40%;
+    max-width: 50%;
     box-sizing: border-box;
     overflow-wrap: break-word;
 }
