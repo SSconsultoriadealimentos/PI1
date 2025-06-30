@@ -346,10 +346,14 @@ footer p {
  
         display: flex;
         justify-content: center;
-        background-color: #468944;
+        background-color: #478a45;
         padding: 0.5rem;
 
     }
+    
+    header .col.menu a {
+        color: #fff;
+}
 
     header .col.social {
         display: none;
