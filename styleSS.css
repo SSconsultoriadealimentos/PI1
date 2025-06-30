@@ -54,8 +54,6 @@ header .col.logo {
     flex-basis: 33%;
     background-image: url('img/logo.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 6rem;
     justify-content: center;
 }
 
