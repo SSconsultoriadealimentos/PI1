@@ -104,7 +104,6 @@ nav ul li a:hover {
     background-image: url('img/banner.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
