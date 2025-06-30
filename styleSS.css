@@ -126,7 +126,6 @@ nav ul li a:hover {
 
 .servicos .card-section {
     display: flex;
-    flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
     padding-top: 2.5rem;
