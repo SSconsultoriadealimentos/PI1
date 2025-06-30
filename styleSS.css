@@ -29,7 +29,7 @@ h2 {
 
 p {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(1.1rem, 2.1vw, 1.225rem);
+    font-size: clamp(1rem, 2vw, 1rem);
     color: #555;
     line-height: 1.5;
     letter-spacing: -0.02em;
