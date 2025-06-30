@@ -339,13 +339,15 @@ footer p {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        font-color: #fff
     }
-
+    
     header .col.menu {
  
         display: flex;
         justify-content: center;
-    }
+        background-color: #468944;
+        padding: 0.5rem;
 
     header .col.social {
         display: none;
