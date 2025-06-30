@@ -44,6 +44,7 @@ header {
     align-items: center;
     padding: 1.25rem;
     gap: 1.25rem;
+    padding: 4rem 4rem;
 }
 
 header .col {
@@ -54,7 +55,8 @@ header .col.logo {
     flex-basis: 33%;
     background-image: url('img/logo.png');
     background-repeat: no-repeat;
-    justify-content: center;
+    background-size: contain;
+    height: 6rem;
 }
 
 header .col.menu {
@@ -66,7 +68,7 @@ header .col.menu {
 header .col.social {
     flex-basis: 33%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 1rem;
 }
 
