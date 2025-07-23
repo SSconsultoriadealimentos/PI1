@@ -1,58 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 /* ---------------- Estilos Globais ---------------- */
 body {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    background-color: #F8F7F5;
+    background-color: #f2f1f7;
+    font-family: "Roboto Serif", serif;
+    
+    
 }
 
 h1 {
+   font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+    font-style: normal;
     font-size: 0;
     position: absolute;
     left: -9999px;
 }
 
+
 h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2rem;
     line-height: 1.2;
-    letter-spacing: -0.03em;
+    letter-spacing: 0.05em;
     color: #0E304C;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 p {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(1.125rem, 3vw, 1.5rem);
-    color: #555;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
+    font-size: clamp(1rem, 2vw, 1rem);
+    color: #3d3a3a;
+    line-height: 1.55rem;
+    letter-spacing: 0.03em;
     margin: 0;
-    text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
 }
 
 /* ---------------- Cabeçalho ---------------- */
 header {
+    background-color: #F8F7F5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem;
     gap: 1.25rem;
+   padding: 40px 20px;
 }
 
-header .col {
-    flex: 1;
-}
+
 
 header .col.logo {
     flex-basis: 33%;
     background-image: url('img/logo.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 6rem;
+    background-size:contain;
+    height: 7rem;
 }
 
 header .col.menu {
@@ -60,6 +66,8 @@ header .col.menu {
     display: flex;
     justify-content: center;
 }
+
+
 
 header .col.social {
     flex-basis: 33%;
@@ -73,7 +81,7 @@ header .social-icon-img {
     height: 2rem;
 }
 
-/* Navegação */
+/* ---------------- Navegação ---------------- */
 nav ul {
     list-style: none;
     padding: 0;
@@ -83,11 +91,16 @@ nav ul {
 }
 
 nav ul li a {
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.2rem;
     text-decoration: none;
     font-weight: 600;
-    font-size: clamp(0.85rem, 2vw, 1rem);
-    color: #2DA145;
-    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 2.25vw, 1.25rem);
+    color: #2da145;
+    font-size: 1.6rem;
+    margin-left: 40px;
 }
 
 nav ul li a:hover {
@@ -96,35 +109,54 @@ nav ul li a:hover {
 
 /* ---------------- Seção Sobre Nós ---------------- */
 .sobre-nos {
-    position: relative;
-    height: 25rem;
-    background-image: url('img/banner.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 2rem;
-    flex-wrap: wrap;
+    width: 80%;  
+    margin: auto;
+    padding: 4rem;
+}
+#nos{
+    background-color:#F8F7F5;
+    background-color: #FFF;
+    
+    
 }
 
-.sobre-nos .texto-sobre-imagem {
-    padding: 1.5rem;
-    max-width: 50%;
+
+.texto-sobre-imagem p {
+    margin: auto;
+    font-weight: 400;
+    font-size:1.1rem;
+    margin-top: 20px;
+    line-height: 2.5rem;
+    box-sizing: border-box;
+    text-align: justify;
+    
+}
+.texto-sobre-imagem strong {
+    background-color: rgba(158, 233, 72, 0.596);
+    border-radius: 8px;
+    font-size: 2rem bold;
+   
+}
+.texto-sobre-imagem h2{
+    text-align: center;
+   
 }
 
 /* ---------------- Seção Serviços ---------------- */
 .servicos {
-    padding: 4rem 1.25rem;
+    padding: 4rem;
+    margin: auto;
+    width: 80%;
+    background-color: #FFF;
+   
+    
 }
 
 .servicos .card-section {
     display: flex;
-    flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
 }
 
 .servicos .card {
@@ -134,7 +166,6 @@ nav ul li a:hover {
     box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
     overflow: hidden;
     width: 100%;
-    max-width: 18.75rem;
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease-in-out;
@@ -146,9 +177,11 @@ nav ul li a:hover {
 
 .servicos .card img {
     width: 100%;
-    height: 11.25rem;
-    object-fit: cover;
+    height: 22.25rem;
+   object-fit: cover;
     object-position: top;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .servicos .card-content {
@@ -160,44 +193,51 @@ nav ul li a:hover {
 }
 
 .servicos .card-content h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
     font-size: 1.125rem;
     color: #0E2E4B;
     margin-bottom: 0.625rem;
 }
 
 .servicos .card-content p {
-    font-size: 0.9375rem;
-    color: #555;
+    font-size: 0.9rem;
+    color: #726f6f;
     margin-bottom: 1.25rem;
     line-height: 1.5;
     flex-grow: 1;
 }
 
 .servicos .card-button {
-    display: inline-block;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.875rem;
+    font-weight: 400;
+    font-size: 0.880rem;
     padding: 0.625rem 1.25rem;
-    background: #1DAE54;
+    background: #2da145;;
     color: #FFF;
     border-radius: 0.375rem;
-    font-family: 'Inter', sans-serif;
-    transition: background-color 0.3s ease;
-    align-self: flex-start;
+    font-family: "Roboto Serif", serif;
+    font-weight: 700;
+    transition:  0.3s ease;
+
+}
+.card-button {
+    text-align: center;
 }
 
 .servicos .card-button:hover {
-    background-color: #56b049;
+    background-color: #c72797;
 }
 
 /* ---------------- Seção Contato ---------------- */
 .contato {
+    background-color: #FFF;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem 4rem;
-    padding: 4rem 1.25rem;
+    padding: 4rem;
 }
 
 .contato .formulario,
@@ -205,36 +245,51 @@ nav ul li a:hover {
     flex: 1 1 45%;
 }
 
-.contato form input,
+.contato form input {
+    width: 95%;
+    padding: 0.625rem;
+    margin-bottom: 2rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.375rem;
+    margin-top: 0.25rem;
+}
 .contato form textarea {
     width: 95%;
     padding: 0.625rem;
     margin-bottom: 1rem;
     border: 0.0625rem solid #ccc;
     border-radius: 0.375rem;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 0.25rem;
+    height: 3rem;
 }
-
 .contato form button {
-    width: 100%;
+    font-family: "Roboto Serif", serif;
+    letter-spacing: 0.2rem;
     padding: 0.625rem 1.25rem;
     border: none;
-    background-color: #1DAE54;
+    background-color: #2da145;;
     color: #fff;
     font-weight: 700;
     border-radius: 0.375rem;
     cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .contato iframe {
     width: 100%;
-    height: 75%;
+    height: 78%;
     border: 0;
 }
 
 .contato .mapa p {
     font-size: 13px;
 }
+
+.contato .formulariobox {
+    padding-top: 2.5rem;     
+ }
+
 
 /* ---------------- Rodapé ---------------- */
 footer {
@@ -246,7 +301,7 @@ footer {
 
 footer > div {
     max-width: 68.75rem;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,6 +315,7 @@ footer a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    padding: 20px;
 }
 
 footer a:hover {
@@ -314,24 +370,61 @@ footer p {
 
 /* ---------------- Estilos Mobile ---------------- */
 @media screen and (max-width: 768px) {
+    header {
+    display:block;
+    width: 100%;    
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 1rem;
+    }
+    
+    nav a {
+        font-size: 0.1rem;
+    }
 
     header .col.logo {
-        flex-basis: 100%;
-        width: 100%;
         height: 150px;
         background-image: url('img/logo.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        
+       
     }
+    
+   header {
+    display: block;
+    align-items: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+header .col.menu {
+    background-color: #2DA145;
+    padding: 20px;
+    margin-top: 2rem;
+}
+    
+    .col.menu a{
+       
+        font-size: 1.5rem;
+        color: #fff;
+        
+        
+      
+}
 
-    header .col.menu,
     header .col.social {
         display: none;
     }
 
     .sobre-nos {
-        height: auto;
+        
         background-image: none;
         display: block;
         padding: 2rem;
@@ -341,7 +434,7 @@ footer p {
         content: "";
         display: block;
         width: 100%;
-        aspect-ratio: 3/4;
+        
         background-image: url('img/banner.png');
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         border-radius: 0.75rem;
@@ -354,8 +447,16 @@ footer p {
     }
 
     .sobre-nos .texto-sobre-imagem {
-        max-width: 100%;
-        padding: 0;
+        width: 100%;
+        box-sizing: none;
+    
+    }
+    .texto-sobre-imagem  p{
+        
+        font-size: 1rem;
+        margin-left: 40px;
+        width:100%;
+        margin: 0;
     }
 
     .servicos {
@@ -384,7 +485,37 @@ footer p {
     }
 
     .contato .formulariobox {
-        margin-top: 2rem;
+        padding-top: 1.5rem;
+        
     }
+    
+}
 
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  
+  .texto-sobre-imagem{
+    width: 100%;
+    
+  }
+ .texto-sobre-imagem p{
+   width: 100%;
+   font-size: 1rem;
+   text-align: justify;
+     
+ }
+ .col.logo {
+    flex-basis: 100%;
+    background-image: url('img/logo.png');
+     background-size: 300px;
+}
+}
+
+
+.card{
+    margin-bottom: 50px;
+    position:relative;
+}
+.card-section{
+    display: block;
 }
